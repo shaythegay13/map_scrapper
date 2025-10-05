@@ -1,0 +1,260 @@
+INFO:__main__:================================================================================
+INFO:__main__:Starting NYC Food Access Data Scraper
+INFO:__main__:================================================================================
+INFO:__main__:
+--- Scraping API Sources ---
+API Sources:   0%|          | 0/1 [00:00<?, ?it/s]INFO:scrapers.base_scraper:Starting scraper: NYC Open Data - GreenThumb Gardens
+INFO:scrapers.api_scraper:Processing 630 records from offset 0
+INFO:utils:Geocoded: 950 Union Ave, Bronx, NY 10459 -> (40.8230832, -73.9013716)
+INFO:utils:Geocoded: 414 Morris Ave, Bronx, NY 10451 -> (40.8154721, -73.923466)
+INFO:utils:Geocoded: 419 Botanical Square S, The Bronx, NY 10 -> (40.8676629, -73.8826049)
+INFO:utils:Geocoded: 2761 Sampson Avenue Bronx NY 10465 -> (40.8192141, -73.8228685)
+INFO:utils:Geocoded: 515 Jackson Avenue Bronx NY 10455 -> (40.8124596, -73.9096326)
+WARNING:utils:No geocoding result for: 731 East 161 Street Bronx NY 10456
+INFO:utils:Geocoded: 985 Waring Avenue Bronx NY 10469 -> (40.8614951, -73.8591875)
+INFO:utils:Geocoded: 1960 PUGSLEY AVENUE -> (40.8346712, -73.8579865)
+INFO:utils:Geocoded: 924 Melrose Avenue -> (40.8249718, -73.9133072)
+INFO:utils:Geocoded: 1834 Randall Avenue -> (40.8172581, -73.8604765)
+WARNING:utils:No geocoding result for: 438-44 Clarmont Pkwy
+WARNING:utils:No geocoding result for: 1315 Odgen Avenue
+WARNING:utils:No geocoding result for: 797 Eagle Avenue. (East 158th Street)
+INFO:utils:Geocoded: 1644 Westchester Avenue -> (40.829548, -73.8741443)
+INFO:utils:Geocoded: BROAD STREET -> (40.7064906, -74.0110604)
+INFO:utils:Geocoded: TOMPKINS CIRCLE -> (40.636568, -74.0798933)
+INFO:utils:Geocoded: BAYVIEW TERRACE -> (40.5268747, -74.1641564)
+INFO:utils:Geocoded: 108-16 159th Queens -> (40.6947934, -73.7941068)
+INFO:utils:Geocoded: 31-57 51st St, Woodside, New York 11377 -> (40.7474218, -73.9131002)
+INFO:utils:Geocoded: 61-1 Tonsor Street -> (40.7114033, -73.9072527)
+INFO:utils:Geocoded: 90-20 170th Street, Queens 11432 -> (40.7081663, -73.7906155)
+WARNING:utils:No geocoding result for: 41-38 69th St, Flushing, NY 11377
+WARNING:utils:No geocoding result for: 41-38 69th St, Flushing, NY 11377
+WARNING:utils:No geocoding result for: 50th St. and Barnett Ave.
+INFO:utils:Geocoded: 49-11 Broadway Queens NY 11377 -> (40.7556515, -73.9112767)
+WARNING:utils:No geocoding result for: 12001 142nd Place, South Ozone Parks
+WARNING:utils:No geocoding result for: 162-11 109th Ave (108-51 Union Hall St)
+WARNING:utils:No geocoding result for: 108-56 Union Hall St (160-19 109th Ave)
+INFO:utils:Geocoded: 15012 115th Dr, Queens, NY 11434 -> (40.6844834, -73.7899357)
+INFO:utils:Geocoded: 308 Beach 58th Street -> (40.5947031, -73.7881837)
+INFO:utils:Geocoded: 640 WATER ST, 10002 -> (40.7121823, -73.9826663)
+INFO:utils:Geocoded: 10 Catherine Slip, New York, NY -> (40.7098223, -73.9975325)
+INFO:utils:Geocoded: 15 East 99th Street NY 10029 -> (40.7891006, -73.9523647)
+INFO:utils:Geocoded: 1565 Park Ave, New York, NY -> (40.7967952, -73.944426)
+INFO:utils:Geocoded: 200-218 Albany St, New York, NY 10280 -> (40.7105499, -74.0179666)
+WARNING:utils:No geocoding result for: 230 West 129 street NY NY 10027
+INFO:utils:Geocoded: SPRING STREET -> (40.7255399, -74.0040137)
+INFO:utils:Geocoded: 220 E. 119th Street -> (40.799582, -73.9381144)
+WARNING:utils:No geocoding result for: 181 Stanton Street - 137 Attorney Street
+WARNING:utils:No geocoding result for: 437 East 114th St/448 East 115th St
+INFO:utils:Geocoded: 530 East 6th Street -> (40.7246865, -73.9825556)
+WARNING:utils:No geocoding result for: 342 Pleasant Avenue (502 E 119th Street)
+INFO:utils:Geocoded: 130 3rd Ave, Brooklyn, NY 11217 -> (40.6821725, -73.9833792)
+WARNING:utils:No geocoding result for: 894 William Avenue Brooklyn NY 11207
+WARNING:utils:No geocoding result for: 50 Humbold street Brooklyn NY 11206
+INFO:utils:Geocoded: 45 Somers -> (41.342212, -73.7434884)
+INFO:utils:Geocoded: 835 Gates Ave Brooklyn NY 11221 -> (40.6884026, -73.9328718)
+INFO:utils:Geocoded: 228 York Street, Brooklyn, NY 11201 -> (40.7006788, -73.9813917)
+INFO:utils:Geocoded: 219 34th St. Brooklyn, NY 11232 -> (40.6547207, -74.0017636)
+INFO:utils:Geocoded: 2985 Avenue X Brooklyn NY 11229 -> (40.5943538, -73.9382463)
+INFO:utils:Geocoded: 862 Park Avenue Brooklyn NY 11206 -> (40.6981679, -73.940557)
+INFO:utils:Geocoded: 201 Myrtle Avenue Brooklyn NY 11201 -> (40.6934358, -73.9799487)
+INFO:utils:Geocoded: 109 Lewis Avenue Brooklyn NY 11206 -> (40.6934633, -73.936514)
+INFO:utils:Geocoded: 911 Myrtle Avenue Brooklyn NY 11206 -> (40.6959448, -73.9461449)
+INFO:utils:Geocoded: 636 Myrtle Avenue -> (42.658415, -73.7833173)
+INFO:utils:Geocoded: 774 Halsey Street Brooklyn -> (40.684817, -73.922927)
+INFO:utils:Geocoded: 2871 Surf Avenue -> (40.573003, -73.9945467)
+INFO:utils:Geocoded: 786 Livonia Ave. Brooklyn -> (40.6655793, -73.8879841)
+INFO:utils:Geocoded: SHELL ROAD -> (40.5844409, -73.9745702)
+WARNING:utils:No geocoding result for: 590 Schenck Avenue (641 Hendrix Street)
+INFO:utils:Geocoded: 46 Columbia Pl, Brooklyn, NY 11201 -> (40.6931083, -73.998728)
+INFO:scrapers.base_scraper:Completed scraper: NYC Open Data - GreenThumb Gardens - Found 630 records
+INFO:__main__:✓ NYC Open Data - GreenThumb Gardens: 630 records
+API Sources: 100%|██████████| 1/1 [02:11<00:00, 132.00s/it]API Sources: 100%|██████████| 1/1 [02:11<00:00, 132.00s/it]
+INFO:__main__:
+--- Scraping HTML Sources ---
+HTML Sources:   0%|          | 0/26 [00:00<?, ?it/s]INFO:scrapers.base_scraper:Starting scraper: NYC Parks GreenThumb
+INFO:scrapers.base_scraper:Fetching: https://www.nycgovparks.org/greenthumb/community-gardens
+INFO:scrapers.base_scraper:Completed scraper: NYC Parks GreenThumb - Found 0 records
+INFO:__main__:✓ NYC Parks GreenThumb: 0 records
+HTML Sources:   4%|▍         | 1/26 [00:02<01:03,  2.55s/it]INFO:scrapers.base_scraper:Starting scraper: LUNGS NYC Gardens
+INFO:scrapers.base_scraper:Fetching: https://lungsnyc.org/gardens-greenspaces/
+INFO:scrapers.base_scraper:Completed scraper: LUNGS NYC Gardens - Found 1 records
+INFO:__main__:✓ LUNGS NYC Gardens: 1 records
+HTML Sources:   8%|▊         | 2/26 [00:05<01:05,  2.73s/it]INFO:scrapers.base_scraper:Starting scraper: Community Fridge Finder
+INFO:scrapers.base_scraper:Fetching: https://www.communityfridgefinder.com/browse
+INFO:scrapers.base_scraper:Completed scraper: Community Fridge Finder - Found 0 records
+INFO:__main__:✓ Community Fridge Finder: 0 records
+HTML Sources:  12%|█▏        | 3/26 [00:07<00:57,  2.52s/it]INFO:scrapers.base_scraper:Starting scraper: One Love Community Fridge
+INFO:scrapers.base_scraper:Fetching: https://www.onelovecommunityfridge.org/fridges
+INFO:scrapers.base_scraper:Completed scraper: One Love Community Fridge - Found 0 records
+INFO:__main__:✓ One Love Community Fridge: 0 records
+HTML Sources:  15%|█▌        | 4/26 [00:10<00:53,  2.45s/it]INFO:scrapers.base_scraper:Starting scraper: Manhattan Land Trust
+INFO:scrapers.base_scraper:Fetching: https://www.manhattanlandtrust.org/our-gardens/
+INFO:scrapers.base_scraper:Completed scraper: Manhattan Land Trust - Found 0 records
+INFO:__main__:✓ Manhattan Land Trust: 0 records
+HTML Sources:  19%|█▉        | 5/26 [00:12<00:52,  2.52s/it]INFO:scrapers.base_scraper:Starting scraper: Brooklyn Queens Land Trust
+INFO:scrapers.base_scraper:Fetching: https://bqlt.org/our-gardens
+INFO:scrapers.base_scraper:Completed scraper: Brooklyn Queens Land Trust - Found 0 records
+INFO:__main__:✓ Brooklyn Queens Land Trust: 0 records
+HTML Sources:  23%|██▎       | 6/26 [00:14<00:49,  2.46s/it]INFO:scrapers.base_scraper:Starting scraper: Bronx Land Trust
+INFO:scrapers.base_scraper:Fetching: https://www.bronxlandtrust.org/ourgardens
+INFO:scrapers.base_scraper:Completed scraper: Bronx Land Trust - Found 0 records
+INFO:__main__:✓ Bronx Land Trust: 0 records
+HTML Sources:  27%|██▋       | 7/26 [00:17<00:46,  2.43s/it]INFO:scrapers.base_scraper:Starting scraper: NYRP Gardens
+INFO:scrapers.base_scraper:Fetching: https://www.nyrp.org/en/gardens-and-parks/
+ERROR:scrapers.base_scraper:Error fetching https://www.nyrp.org/en/gardens-and-parks/: 403 Client Error: Forbidden for url: https://www.nyrp.org/en/gardens-and-parks/
+INFO:scrapers.base_scraper:Completed scraper: NYRP Gardens - Found 0 records
+INFO:__main__:✓ NYRP Gardens: 0 records
+HTML Sources:  31%|███       | 8/26 [00:17<00:31,  1.73s/it]INFO:scrapers.base_scraper:Starting scraper: Zachary Schulman Garden Leaders
+INFO:scrapers.base_scraper:Fetching: https://zacharyschulman.com/gardenleaders
+INFO:scrapers.base_scraper:Completed scraper: Zachary Schulman Garden Leaders - Found 0 records
+INFO:__main__:✓ Zachary Schulman Garden Leaders: 0 records
+HTML Sources:  35%|███▍      | 9/26 [00:19<00:32,  1.91s/it]INFO:scrapers.base_scraper:Starting scraper: Food Bank NYC
+INFO:scrapers.base_scraper:Fetching: https://www.foodbanknyc.org/get-help/
+INFO:scrapers.base_scraper:Completed scraper: Food Bank NYC - Found 0 records
+INFO:__main__:✓ Food Bank NYC: 0 records
+HTML Sources:  38%|███▊      | 10/26 [00:22<00:32,  2.05s/it]INFO:scrapers.base_scraper:Starting scraper: NYC Food Help Finder
+INFO:scrapers.base_scraper:Fetching: https://finder.nyc.gov/foodhelp/locations
+INFO:scrapers.base_scraper:Completed scraper: NYC Food Help Finder - Found 0 records
+INFO:__main__:✓ NYC Food Help Finder: 0 records
+HTML Sources:  42%|████▏     | 11/26 [00:24<00:32,  2.14s/it]INFO:scrapers.base_scraper:Starting scraper: City Harvest Food Map
+INFO:scrapers.base_scraper:Fetching: https://www.cityharvest.org/food-map/
+INFO:scrapers.base_scraper:Completed scraper: City Harvest Food Map - Found 0 records
+INFO:__main__:✓ City Harvest Food Map: 0 records
+HTML Sources:  46%|████▌     | 12/26 [00:27<00:31,  2.28s/it]INFO:scrapers.base_scraper:Starting scraper: GrowNYC Greenmarkets
+INFO:scrapers.base_scraper:Fetching: https://www.grownyc.org/greenmarket/ourmarkets
+INFO:scrapers.base_scraper:Completed scraper: GrowNYC Greenmarkets - Found 0 records
+INFO:__main__:✓ GrowNYC Greenmarkets: 0 records
+HTML Sources:  50%|█████     | 13/26 [00:29<00:31,  2.41s/it]INFO:scrapers.base_scraper:Starting scraper: Just Food Value Chain
+INFO:scrapers.base_scraper:Fetching: https://www.justfood.org/value-chain-map?tags=community-%20run%20farmers%20market%20site
+INFO:scrapers.base_scraper:Completed scraper: Just Food Value Chain - Found 0 records
+INFO:__main__:✓ Just Food Value Chain: 0 records
+HTML Sources:  54%|█████▍    | 14/26 [00:32<00:28,  2.38s/it]INFO:scrapers.base_scraper:Starting scraper: Local Harvest NYC
+INFO:scrapers.base_scraper:Fetching: https://www.localharvest.org/search.jsp?map=1&lat=40.75&lon=-73.99&scale=11&zip=10001
+INFO:scrapers.base_scraper:Completed scraper: Local Harvest NYC - Found 0 records
+INFO:__main__:✓ Local Harvest NYC: 0 records
+HTML Sources:  58%|█████▊    | 15/26 [00:35<00:30,  2.76s/it]INFO:scrapers.base_scraper:Starting scraper: Jamaica Farmers Market
+INFO:scrapers.base_scraper:Fetching: https://publicmarkets.nyc/jamaica-farmers-market
+ERROR:scrapers.base_scraper:Error fetching https://publicmarkets.nyc/jamaica-farmers-market: 403 Client Error: Forbidden for url: https://publicmarkets.nyc/jamaica-farmers-market
+INFO:scrapers.base_scraper:Completed scraper: Jamaica Farmers Market - Found 0 records
+INFO:__main__:✓ Jamaica Farmers Market: 0 records
+HTML Sources:  62%|██████▏   | 16/26 [00:36<00:20,  2.03s/it]INFO:scrapers.base_scraper:Starting scraper: Queens Farm
+INFO:scrapers.base_scraper:Fetching: https://www.queensfarm.org/farmstand/
+INFO:scrapers.base_scraper:Completed scraper: Queens Farm - Found 0 records
+INFO:__main__:✓ Queens Farm: 0 records
+HTML Sources:  65%|██████▌   | 17/26 [00:38<00:19,  2.14s/it]INFO:scrapers.base_scraper:Starting scraper: South Bronx Farmers Market
+INFO:scrapers.base_scraper:Fetching: http://southbronxfarmersmarket.com/
+INFO:scrapers.base_scraper:Completed scraper: South Bronx Farmers Market - Found 0 records
+INFO:__main__:✓ South Bronx Farmers Market: 0 records
+HTML Sources:  69%|██████▉   | 18/26 [00:41<00:18,  2.37s/it]INFO:scrapers.base_scraper:Starting scraper: Sprout Up Farms
+INFO:scrapers.base_scraper:Fetching: https://www.sproutup.org/exploring-a-farm
+INFO:scrapers.base_scraper:Completed scraper: Sprout Up Farms - Found 0 records
+INFO:__main__:✓ Sprout Up Farms: 0 records
+HTML Sources:  73%|███████▎  | 19/26 [00:44<00:17,  2.43s/it]INFO:scrapers.base_scraper:Starting scraper: Garden Kitchen Lab
+INFO:scrapers.base_scraper:Fetching: https://gardenkitchenlab.org/our-farms/
+INFO:scrapers.base_scraper:Completed scraper: Garden Kitchen Lab - Found 0 records
+INFO:__main__:✓ Garden Kitchen Lab: 0 records
+HTML Sources:  77%|███████▋  | 20/26 [00:46<00:14,  2.40s/it]INFO:scrapers.base_scraper:Starting scraper: Wellspring Forest Farm
+INFO:scrapers.base_scraper:Fetching: https://www.wellspringforestfarm.com/
+INFO:scrapers.base_scraper:Completed scraper: Wellspring Forest Farm - Found 0 records
+INFO:__main__:✓ Wellspring Forest Farm: 0 records
+HTML Sources:  81%|████████  | 21/26 [00:49<00:12,  2.47s/it]INFO:scrapers.base_scraper:Starting scraper: Farming with Trees
+INFO:scrapers.base_scraper:Fetching: https://www.farmingwithtrees.org/home
+INFO:scrapers.base_scraper:Completed scraper: Farming with Trees - Found 0 records
+INFO:__main__:✓ Farming with Trees: 0 records
+HTML Sources:  85%|████████▍ | 22/26 [00:51<00:10,  2.53s/it]INFO:scrapers.base_scraper:Starting scraper: Last Farm in NYC
+INFO:scrapers.base_scraper:Fetching: https://thelastfarminnewyorkcity.com/markets-csas/
+WARNING:utils:No geocoding result for: 2021 article explains CSAs and includes a borough by borough list of some of the best
+INFO:scrapers.base_scraper:Completed scraper: Last Farm in NYC - Found 1 records
+INFO:__main__:✓ Last Farm in NYC: 1 records
+HTML Sources:  88%|████████▊ | 23/26 [00:54<00:08,  2.69s/it]INFO:scrapers.base_scraper:Starting scraper: NYBG Edible Academy
+INFO:scrapers.base_scraper:Fetching: https://www.nybg.org/education/childrens-education/edible-academy/
+WARNING:utils:No geocoding result for: 12 The Bronx
+New York Botanical Gard
+INFO:scrapers.base_scraper:Completed scraper: NYBG Edible Academy - Found 6 records
+INFO:__main__:✓ NYBG Edible Academy: 6 records
+HTML Sources:  92%|█████████▏| 24/26 [00:57<00:05,  2.75s/it]INFO:scrapers.base_scraper:Starting scraper: Bonton Farms
+INFO:scrapers.base_scraper:Fetching: https://bontonfarms.org/
+INFO:scrapers.base_scraper:Completed scraper: Bonton Farms - Found 0 records
+INFO:__main__:✓ Bonton Farms: 0 records
+HTML Sources:  96%|█████████▌| 25/26 [01:00<00:02,  2.76s/it]INFO:scrapers.base_scraper:Starting scraper: UB Healthy Project
+INFO:scrapers.base_scraper:Fetching: https://ubhealthyproject.org/farmersmarket/
+WARNING:utils:No geocoding result for: 10030
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Uptown Good Food Farm St
+INFO:scrapers.base_scraper:Completed scraper: UB Healthy Project - Found 1 records
+INFO:__main__:✓ UB Healthy Project: 1 records
+HTML Sources: 100%|██████████| 26/26 [01:03<00:00,  2.99s/it]HTML Sources: 100%|██████████| 26/26 [01:03<00:00,  2.46s/it]
+INFO:__main__:
+--- Scraping PDF Sources ---
+PDF Sources:   0%|          | 0/3 [00:00<?, ?it/s]INFO:scrapers.base_scraper:Starting scraper: NYC DOH Farmers Markets Map
+INFO:scrapers.base_scraper:Fetching: https://www.nyc.gov/assets/doh/downloads/pdf/cdp/farmers-markets-map.pdf
+INFO:scrapers.pdf_scraper:Processing PDF with 2 pages
+INFO:scrapers.pdf_scraper:Processing page 1/2
