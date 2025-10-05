@@ -26,6 +26,7 @@ wheels/
 # Output files
 *.csv
 !manual_data/*.csv
+!nyc_food_access_data_COMPLETE.csv
 *.log
 *.xlsx
 
