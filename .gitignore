@@ -27,6 +27,8 @@ wheels/
 *.csv
 !manual_data/*.csv
 !nyc_food_access_data_COMPLETE.csv
+!nyc_food_access_data_COMPLETE_WITH_FLAGS.csv
+!nyc_food_access_data_ORIGINAL.csv
 *.log
 *.xlsx
 
