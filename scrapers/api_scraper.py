@@ -112,22 +112,58 @@ class APIScraper(BaseScraper):
                     lat, lon = coords
             
             # Extract other fields
-            name = (item.get('garden_name') or 
+            name = (item.get('gardenname') or  # GreenThumb specific
+                   item.get('garden_name') or 
                    item.get('name') or 
                    item.get('site_name') or 
                    item.get('facility_name') or
                    item.get('food_scrap_drop_off_site') or
                    item.get('hosted_by'))
             
-            neighborhood = (item.get('neighborhood') or 
-                          item.get('borough') or 
-                          item.get('community_board'))
+            # Decode borough codes for GreenThumb data
+            borough_code = item.get('borough')
+            if borough_code:
+                borough_map = {
+                    'M': 'Manhattan',
+                    'B': 'Brooklyn', 
+                    'Q': 'Queens',
+                    'X': 'Bronx',
+                    'R': 'Staten Island'
+                }
+                neighborhood = borough_map.get(borough_code, borough_code)
+            else:
+                neighborhood = (item.get('neighborhood') or 
+                              item.get('community_board'))
             
-            description = item.get('notes') or item.get('description')
+            # Combine hours from GreenThumb (has separate fields for each day)
+            hours_parts = []
+            day_fields = [
+                ('Mon', item.get('openhrsm')),
+                ('Tue', item.get('openhrstu')),
+                ('Wed', item.get('openhrsw')),
+                ('Thu', item.get('openhrsth')),
+                ('Fri', item.get('openhrsf')),
+                ('Sat', item.get('openhrssa')),
+                ('Sun', item.get('openhrssu'))
+            ]
+            for day, hrs in day_fields:
+                if hrs and hrs.lower() != 'closed':
+                    hours_parts.append(f"{day}: {hrs}")
             
-            hours = (item.get('operation_day_hours') or
-                    item.get('hours') or
-                    item.get('open_months'))
+            hours = '; '.join(hours_parts) if hours_parts else None
+            
+            # Fallback to other hour fields
+            if not hours:
+                hours = (item.get('operation_day_hours') or
+                        item.get('hours') or
+                        item.get('open_months'))
+            
+            # Owner/jurisdiction
+            owner = item.get('juris') or item.get('owner')
+            
+            # Cross streets for additional location info
+            cross_streets = item.get('crossstreets')
+            description = cross_streets or item.get('notes') or item.get('description')
             
             contact = (item.get('contact_phone') or 
                       item.get('phone') or 
@@ -144,6 +180,7 @@ class APIScraper(BaseScraper):
                 description=description,
                 data_type=self.data_type,
                 open_hours=hours,
+                owner=owner,
                 contact=contact,
                 website1=website,
                 source_url=self.url
