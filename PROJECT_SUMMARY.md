@@ -1,5 +1,7 @@
 # NYC Food Access Data Scraper - Project Summary
 
+> Working notes from October 2025. Counts in this file can disagree with `config.py` and the CSV snapshots. [README.md](README.md) is the current description.
+
 ## 🎉 Final Dataset
 
 **File**: `nyc_food_access_data_COMPLETE.csv`

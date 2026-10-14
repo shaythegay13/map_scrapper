@@ -1,75 +1,26 @@
-# Quick Start Guide
+# Quick start
 
-## Installation
+Setup and behavior are documented in [README.md](README.md). This page is only the commands.
 
 ```bash
-# Install dependencies
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Run the Scraper
+Collect from every source in `config.py` (this hits the network; read the responsible-scraping section first):
 
 ```bash
 python main.py
 ```
 
-That's it! The scraper will:
-1. Collect data from 30+ sources
-2. Geocode all addresses
-3. Clean and deduplicate
-4. Save to CSV with timestamp
+That writes `nyc_food_access_data_YYYYMMDD_HHMMSS.csv` and `scraper_YYYYMMDD_HHMMSS.log` in the current directory.
 
-## Output Files
+```bash
+python merge_manual_data.py path/to/scraped.csv
+python clean_csv.py
+```
 
-- `nyc_food_access_data_YYYYMMDD_HHMMSS.csv` - Your data
-- `scraper_YYYYMMDD_HHMMSS.log` - Detailed logs
+`merge_manual_data.py` appends `manual_data/community_fridges.csv` only. `clean_csv.py` reads `nyc_food_access_data_COMPLETE.csv` and writes `nyc_food_access_data_CLEAN.csv`.
 
-## What Gets Scraped
-
-- **Community Gardens**: 500+ gardens across NYC
-- **Farmers Markets**: 100+ markets
-- **Urban Farms**: 50+ farms
-- **Community Fridges**: 50+ locations
-- **Food Banks/Pantries**: 200+ locations
-- **CSA Programs**: Various programs
-
-## Expected Runtime
-
-- **First run**: 30-60 minutes (includes geocoding)
-- **Subsequent runs**: 20-40 minutes (cached geocoding)
-
-## Common Issues
-
-### Rate Limiting
-If you see "Too many requests" errors:
-- The scraper automatically retries with backoff
-- Wait a few minutes and restart if needed
-
-### Missing Data
-Some sources may not provide all fields:
-- Check the log file for specific errors
-- Not all sources have phone numbers, hours, etc.
-
-### Geocoding Failures
-If addresses can't be geocoded:
-- They'll still be included in the output
-- Lat/long fields will be empty
-- Consider manual geocoding for important entries
-
-## Next Steps
-
-1. **Review the CSV**: Check data quality
-2. **Filter by type**: Use `type` column to filter
-3. **Map the data**: Import CSV into mapping software
-4. **Update sources**: Add new sources to `config.py`
-
-## Tips
-
-- Run semi-annually to keep data fresh
-- Back up previous CSV files before running
-- Check logs for any errors or warnings
-- Verify a sample of geocoded coordinates
-
-## Need Help?
-
-See the full README.md for detailed documentation.
+The checked-in complete snapshot has 1,279 records. A fresh run will not match that file, and several HTML parsers are generic guesses. Details, source list, and limits are in the README.

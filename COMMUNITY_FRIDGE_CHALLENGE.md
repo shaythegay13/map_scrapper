@@ -1,5 +1,7 @@
 # Community Fridge Data Challenge
 
+> Working notes from October 2025. Counts in this file can disagree with `config.py` and the CSV snapshots. [README.md](README.md) is the current description.
+
 ## Current Status
 
 **Community Fridges Found**: 6-7 (from One Love + Freedge)

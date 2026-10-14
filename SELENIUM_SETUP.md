@@ -1,5 +1,7 @@
 # Selenium Setup Guide
 
+> Working notes from October 2025. The ChromeDriver download in `setup_selenium.sh` uses a retired host. Current setup is in [README.md](README.md).
+
 ## What is Selenium?
 
 Selenium allows the scraper to interact with JavaScript-heavy websites that load data dynamically. This is essential for sites like:

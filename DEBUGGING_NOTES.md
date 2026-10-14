@@ -1,5 +1,7 @@
 # Debugging Notes - Food Banks & Selenium Issues
 
+> Working notes from October 2025. Counts in this file can disagree with `config.py` and the CSV snapshots. [README.md](README.md) is the current description.
+
 ## Problems Identified
 
 ### 1. ❌ No Food Banks/Pantries in Results
